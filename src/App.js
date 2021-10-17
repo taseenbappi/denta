@@ -1,10 +1,18 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Home from './Pages/Home/Home/Home';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hi , Welcome assignment 10</h1>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+        </Switch>
+      </Router>
+
     </div>
   );
 }
