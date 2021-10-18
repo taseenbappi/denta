@@ -1,0 +1,11 @@
+.service-card:hover{
+    box-shadow: 0px 5px 10px gray;
+    transition: box-shadow 0.5s;
+
+}
+.service-img{
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+    
+}

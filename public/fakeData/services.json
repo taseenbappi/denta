@@ -1,0 +1,44 @@
+[
+    {
+        "_id": 0,
+        "title": "Cavity Protection",
+        "description": "Will help strengthen teeth and leave your mouth feeling fresh.",
+        "image": "https://i.ibb.co/RhrxYnP/services-1.jpg",
+        "cost": 100
+    },
+    {
+        "_id": 1,
+        "title": "Cosmetic Dentistry",
+        "description": "Cosmetic Dentistry improve the appearance of an individual’s teeth.",
+        "image": "https://i.ibb.co/mDWcL02/services-2.jpg",
+        "cost": 150
+    },
+    {
+        "_id": 2,
+        "title": "Dental Implants",
+        "description": "Dental implants are the closest you can get to healthy, natural teeth.",
+        "image": "https://i.ibb.co/LhKDR7y/services-3.jpg",
+        "cost": 120
+    },
+    {
+        "_id": 3,
+        "title": "Crowns & Bridges",
+        "description": "We’ll design, produce and insert ceramic structure all in one single appointment.",
+        "image": "https://i.ibb.co/jD7k00d/services-4.jpg",
+        "cost": 200
+    },
+    {
+        "_id": 4,
+        "title": "Teeth Whitening",
+        "description": "Teeth Whitening improve how your teeth look by removing stains and discoloration.",
+        "image": "https://i.ibb.co/Qk4rS8c/services-5.jpgg",
+        "cost": 90
+    },
+    {
+        "_id": 5,
+        "title": "Dental Radioghraphy",
+        "description": "Dental X-rays are a useful tool that help to diagnose and plan treatments.",
+        "image": "https://i.ibb.co/pPm97sr/services-6.jpg",
+        "cost": 60
+    }
+]

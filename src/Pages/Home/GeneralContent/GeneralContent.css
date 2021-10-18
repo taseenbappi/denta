@@ -1,0 +1,17 @@
+.g-container{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(55,197,174,1) 0%, rgb(8, 136, 106) 100%, rgba(157,157,157,1) 100%, rgba(136,136,136,1) 100%);
+    color: white;
+
+}
+.g-body{
+    border-right: 2px solid rgb(255, 255, 255);
+}
+.g-icon{
+    font-size: 60px;
+    
+}
+.g-icon:hover{
+    transform: scale(.80);
+    transition: transform .5s;
+}
