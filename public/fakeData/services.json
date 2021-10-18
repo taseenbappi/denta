@@ -16,14 +16,14 @@
     {
         "_id": 2,
         "title": "Dental Implants",
-        "description": "Dental implants are the closest you can get to healthy, natural teeth.",
+        "description": "Dental implants are the closest you can get to healthy,natural teeth.",
         "image": "https://i.ibb.co/LhKDR7y/services-3.jpg",
         "cost": 120
     },
     {
         "_id": 3,
         "title": "Crowns & Bridges",
-        "description": "We’ll design, produce and insert ceramic structure all in one single appointment.",
+        "description": "We’ll design,produce and insert ceramic structure all in one single appointment.",
         "image": "https://i.ibb.co/jD7k00d/services-4.jpg",
         "cost": 200
     },
