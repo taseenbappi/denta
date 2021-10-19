@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import './DetailsService.css';
 
 const DetailsService = () => {
+
     const { serviceId } = useParams();
-    console.log(serviceId);
+    const [services, setServices] = useState([]);
+
+    useEffect(() => {
+        fetch('/fakeData/services.json')
+            .then(res => res.json())
+            .then(data => setServices(data))
+
+    }, [])
+
+    const serviceById = services.filter(service => service._id === serviceId);
+
+
 
     return (
         <div className="container-fluid p-0" >
