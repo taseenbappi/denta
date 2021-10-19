@@ -1,12 +1,5 @@
 [
     {
-        "_id": 0,
-        "title": "Cavity Protection",
-        "description": "Will help strengthen teeth and leave your mouth feeling fresh.",
-        "image": "https://i.ibb.co/RhrxYnP/services-1.jpg",
-        "cost": 100
-    },
-    {
         "_id": 1,
         "title": "Cosmetic Dentistry",
         "description": "Cosmetic Dentistry improve the appearance of an individual’s teeth.",
@@ -40,5 +33,12 @@
         "description": "Dental X-rays are a useful tool that help to diagnose and plan treatments.",
         "image": "https://i.ibb.co/pPm97sr/services-6.jpg",
         "cost": 60
+    },
+    {
+        "_id": 6,
+        "title": "Cavity Protection",
+        "description": "Will help strengthen teeth and leave your mouth feeling fresh.",
+        "image": "https://i.ibb.co/RhrxYnP/services-1.jpg",
+        "cost": 100
     }
 ]

@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import './Service.css';
 
 const Service = (props) => {
-    const { title, description, image, cost } = props.serviceItem;
+    const { _id, title, description, image, cost } = props.serviceItem;
+    const uri = `/detailsService/${_id}`;
     return (
         <div className="col p-3 ">
             <div className="card h-100 service-card ">
@@ -15,7 +16,7 @@ const Service = (props) => {
                 </div>
                 <div className=" d-flex justify-content-between p-3 ">
                     <button className="btn btn-warning">Add to cart</button>
-                    <Link className="btn btn-warning" to="/detailsService" >Details</Link>
+                    <Link className="btn btn-warning" to={uri}  >Details</Link>
                 </div>
             </div>
         </div>

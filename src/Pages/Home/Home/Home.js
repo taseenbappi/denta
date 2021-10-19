@@ -8,13 +8,10 @@ import './Home.css';
 const Home = () => {
     return (
         <div>
-
             <Banner></Banner>
             <GeneralContent></GeneralContent>
             <Services></Services>
             <Overview></Overview>
-
-
         </div>
     );
 };

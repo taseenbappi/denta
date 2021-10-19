@@ -10,10 +10,10 @@ const Footer = () => {
 
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12 col-12 p-3">
-                <i class="fab fa-facebook  p-2  fs-4 text-info"></i>
-                <i class="fab fa-linkedin  p-2 fs-4 text-info"></i>
-                <i class="fab fa-instagram  p-2 fs-4 text-info"></i>
-                <i class="fab fa-twitter  p-2 fs-4 text-info"></i>
+                <i className="fab fa-facebook  p-2  fs-4 text-info"></i>
+                <i className="fab fa-linkedin  p-2 fs-4 text-info"></i>
+                <i className="fab fa-instagram  p-2 fs-4 text-info"></i>
+                <i className="fab fa-twitter  p-2 fs-4 text-info"></i>
                 <p>©copyrights-2021 | Developer: Taseenul Hoque Bappi</p>
             </div>
 

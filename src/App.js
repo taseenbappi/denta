@@ -8,6 +8,7 @@ import NotFound from './Pages/NotFound/NotFound';
 import Register from './Pages/Register/Register';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
+import PrivateRoute from './utilities/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -22,15 +23,16 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
+            <Route path="/detailsService/:serviceId">
+              <DetailsService></DetailsService>
+            </Route>
             <Route path="/login">
               <Login></Login>
             </Route>
             <Route path="/register">
               <Register></Register>
             </Route>
-            <Route path="/detailsService">
-              <DetailsService></DetailsService>
-            </Route>
+
             <Route exact path="*">
               <NotFound></NotFound>
             </Route>

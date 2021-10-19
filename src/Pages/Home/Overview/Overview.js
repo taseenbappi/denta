@@ -11,7 +11,7 @@ const Overview = () => {
                     <img className='img-fluid' src={overviewImg} alt="" />
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 col-12 text-start p-3">
-                    <h2 className="care-text" >#We Care For Every Patient</h2>
+                    <p className="care-text w-75" >#We Care For Every Patient</p>
                     <h1 className="title py-3">Nervous Troubled Attractive Staring Right Anxiously!</h1>
                     <h4>Contact Us Today <span className="text-primary">+088 123 654 987</span></h4>
                 </div>
