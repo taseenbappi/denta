@@ -1,0 +1,14 @@
+.details-title{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(55,197,174,1) 0%, rgba(104,255,220,1) 100%, rgba(157,157,157,1) 100%, rgba(136,136,136,1) 100%);
+    height: 150px;
+}
+.details-title h1{
+    font-weight: 800;
+    font-size: 45px;
+    font-family: Hind,sans-serif;
+}
+.details-subtitle{
+    color: #163f7a;
+}
+

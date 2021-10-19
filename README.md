@@ -1,4 +1,10 @@
-<h1 align="center">Hi 👋, I'm Taseenul Hoque Bappi</h1>
-<h3 align="center">A passionate frontend developer from Bangladesh</h3>
+<h1 align="center">"Denta" is a dental clinic in Bangladesh</h1>
+<h3 align="center">We are provide dental service low cost.</h3>
 
-- 🌱 I’m currently learning **React JS**
+Please visit our Clinic website (https://denta111.web.app/).
+
+## Features
+
+- You can easily calculate hire employees salary.
+- View employee cv to easy to hire.
+- You can view employess list.

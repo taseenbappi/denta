@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import login from '../../images/login.jpg'
 import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
@@ -6,7 +6,25 @@ import './Login.css';
 
 
 const Login = () => {
-    const { googleSignInHandler } = useAuth();
+    const { googleSignInHandler, emailPasswordLoginHangler } = useAuth();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const emailChangeHandler = (event) => {
+        const emailTxt = event.target.value;
+        setEmail(emailTxt);
+
+    }
+    const passwordChangeHandler = (event) => {
+        const passwordTxt = event.target.value;
+        setPassword(passwordTxt);
+    }
+
+    const loginHandler = (event) => {
+        event.preventDefault();
+        emailPasswordLoginHangler(email, password);
+        console.log("login Success")
+    }
     return (
         <div>
             <div className='py-3 container '>
@@ -17,15 +35,15 @@ const Login = () => {
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 col-12 text-start ps-5 ">
                         <h1 className='pb-3'>Login</h1>
-                        <form>
+                        <form onSubmit={loginHandler}>
                             <div className="mb-3">
                                 <i className="fas fa-at pe-2 text-danger"></i>
-                                <input type="email" className=" input-style" id="exampleInputEmail1" placeholder="Enter your email" />
+                                <input onBlur={emailChangeHandler} type="email" className=" input-style" id="exampleInputEmail1" placeholder="Enter your email" />
 
                             </div>
                             <div className="mb-3">
                                 <i className="fas fa-key pe-2 text-danger"></i>
-                                <input type="password" className=" input-style" id="exampleInputPassword1" placeholder="Enter your password" />
+                                <input onBlur={passwordChangeHandler} type="password" className=" input-style" id="exampleInputPassword1" placeholder="Enter your password" />
                             </div>
                             <input type="submit" value="Submit" className="btn btn-outline-danger" />
 

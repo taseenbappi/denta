@@ -21,16 +21,20 @@ const Header = () => {
                             <Nav.Link as={HashLink} to="#services">Services</Nav.Link>
                             <Nav.Link as={HashLink} to="#about">About</Nav.Link>
                             <Nav.Link as={HashLink} to="#contact">Contact</Nav.Link>
+                            <Nav.Link as={Link} to="/register">Register</Nav.Link>
                             {
-                                user.displayName &&
+                                user.email &&
                                 <img src={user.photoURL} alt="" height='50' width='50' className="rounded-circle m-auto p-1" />
                             }
                             <Nav.Link className="text-primary">{user?.displayName}</Nav.Link>
                             {
-                                user.displayName ?
+                                user.email ?
                                     <Nav.Link onClick={logOut}>Log Out</Nav.Link>
                                     :
-                                    <Nav.Link as={Link} to="/login">Login</Nav.Link>
+                                    (
+                                        <Nav.Link as={Link} to="/login">Login</Nav.Link>
+                                    )
+
                             }
                             <Nav.Link as={Link} to="#appointment"><button className="btn btn-warning">Appointment</button></Nav.Link>
                         </Nav>
