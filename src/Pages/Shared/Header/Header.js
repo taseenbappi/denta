@@ -19,8 +19,7 @@ const Header = () => {
                         <Nav className="ms-auto fw-bolder">
                             <Nav.Link as={Link} to="/home">Home</Nav.Link>
                             <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
-                            <Nav.Link as={HashLink} to="#about">About</Nav.Link>
-                            <Nav.Link as={HashLink} to="#contact">Contact</Nav.Link>
+                            <Nav.Link as={HashLink} to="/about">About</Nav.Link>
                             <Nav.Link as={Link} to="/register">Register</Nav.Link>
                             {
                                 user.email &&
@@ -36,7 +35,7 @@ const Header = () => {
                                     )
 
                             }
-                            <Nav.Link as={Link} className="btn btn-warning" to="#appointment">Appointment</Nav.Link>
+                            <Nav.Link as={Link} className="btn btn-warning text-info" to="/appointment">Appointment</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
