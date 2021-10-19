@@ -4,6 +4,7 @@ import './DetailsService.css';
 
 const DetailsService = () => {
     const { serviceId } = useParams();
+    console.log(serviceId);
 
     return (
         <div className="container-fluid p-0" >

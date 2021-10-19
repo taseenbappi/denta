@@ -8,7 +8,6 @@ import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
     const { user, logOut } = useAuth();
-    console.log(user);
     return (
         <div className=''>
             <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className="shadow-sm">
