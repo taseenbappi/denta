@@ -1,14 +1,34 @@
 import React, { useState } from 'react';
 import login from '../../images/login.jpg'
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import './Login.css';
 
 
 const Login = () => {
-    const { googleSignInHandler, emailPasswordLoginHangler } = useAuth();
+    const { googleSignInHandler, emailPasswordLoginHangler, setUser } = useAuth();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [isLoading, setIsLoading] = useState()
+    const location = useLocation();
+    const myHistory = useHistory();
+    const redirect_uri = location.state?.from || "/home";
+
+    const handleGoogleLogin = () => {
+        googleSignInHandler()
+            .then((result) => {
+                // The signed-in user info.
+                const user = result.user;
+                setUser(user);
+                myHistory.push(redirect_uri);
+
+            }).catch((error) => {
+                // Handle Errors here.
+                const errorMessage = error.message;
+                console.log(errorMessage);
+
+            });
+    }
 
     const emailChangeHandler = (event) => {
         const emailTxt = event.target.value;
@@ -22,8 +42,19 @@ const Login = () => {
 
     const loginHandler = (event) => {
         event.preventDefault();
-        emailPasswordLoginHangler(email, password);
-        console.log("login Success")
+        emailPasswordLoginHangler(email, password)
+            .then((userCredential) => {
+                // Signed in 
+                const user = userCredential.user;
+                setUser(user);
+                myHistory.push(redirect_uri);
+                // ...
+            })
+            .catch((error) => {
+                const errorMessage = error.message;
+                console.log(errorMessage);
+            });
+
     }
     return (
         <div>
@@ -53,7 +84,7 @@ const Login = () => {
 
                         </form>
                         <hr className="w-25" /><span></span>
-                        <button className="btn btn-danger" onClick={googleSignInHandler}> Login with Google</button>
+                        <button className="btn btn-danger" onClick={handleGoogleLogin}> Login with Google</button>
                         <hr className="w-25" />
 
                     </div>

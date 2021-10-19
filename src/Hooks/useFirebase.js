@@ -24,17 +24,8 @@ const useFirebase = () => {
     // google sign in handler
     const googleSignInHandler = () => {
 
-        signInWithPopup(auth, googleProvider)
-            .then((result) => {
-                // The signed-in user info.
-                const user = result.user;
-                setUser(user);
-            }).catch((error) => {
-                // Handle Errors here.
-                const errorMessage = error.message;
-                console.log(errorMessage);
+        return signInWithPopup(auth, googleProvider);
 
-            });
     }
     // register handler
     const registerHangler = (email, password, name) => {
@@ -68,17 +59,8 @@ const useFirebase = () => {
     // Email & password login handler 
     const emailPasswordLoginHangler = (email, password) => {
 
-        signInWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                // Signed in 
-                const user = userCredential.user;
-                setUser(user);
-                // ...
-            })
-            .catch((error) => {
-                const errorMessage = error.message;
-                console.log(errorMessage);
-            });
+        return signInWithEmailAndPassword(auth, email, password);
+
 
     }
     // auth observer 

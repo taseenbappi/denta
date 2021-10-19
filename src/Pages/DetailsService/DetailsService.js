@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router';
-import useServices from '../../Hooks/useServices';
 import './DetailsService.css';
 
 const DetailsService = () => {
     const { serviceId } = useParams();
-
 
     return (
         <div className="container-fluid p-0" >
