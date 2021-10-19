@@ -5,7 +5,7 @@ import useAuth from '../../Hooks/useAuth';
 
 const Register = () => {
 
-    const { registerHangler, logOut } = useAuth();
+    const { registerHangler, setUser } = useAuth();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [name, setName] = useState('');
@@ -31,7 +31,7 @@ const Register = () => {
     const registrationHandler = (event) => {
         event.preventDefault();
         registerHangler(email, password, name);
-        logOut();
+        setUser({});
         console.log("register Handler")
     }
 

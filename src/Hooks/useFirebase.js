@@ -23,7 +23,6 @@ const useFirebase = () => {
 
     // google sign in handler
     const googleSignInHandler = () => {
-
         return signInWithPopup(auth, googleProvider);
 
     }
@@ -63,6 +62,8 @@ const useFirebase = () => {
 
 
     }
+
+
     // auth observer 
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {

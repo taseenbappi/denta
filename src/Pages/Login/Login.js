@@ -5,16 +5,18 @@ import useAuth from '../../Hooks/useAuth';
 import './Login.css';
 
 
+
 const Login = () => {
     const { googleSignInHandler, emailPasswordLoginHangler, setUser } = useAuth();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [isLoading, setIsLoading] = useState()
+
     const location = useLocation();
     const myHistory = useHistory();
     const redirect_uri = location.state?.from || "/home";
 
     const handleGoogleLogin = () => {
+
         googleSignInHandler()
             .then((result) => {
                 // The signed-in user info.
@@ -41,6 +43,7 @@ const Login = () => {
     }
 
     const loginHandler = (event) => {
+
         event.preventDefault();
         emailPasswordLoginHangler(email, password)
             .then((userCredential) => {
