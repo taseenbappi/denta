@@ -16,18 +16,18 @@ const Appointment = () => {
                 <div className="col-lg-6 col-md-6 col-sm-12 col-12 p-5 text-start shadow">
                     <form onSubmit={handleAppoinment}>
                         <div className="mb-3">
-                            <i class="fas fa-user-edit pe-2 text-info"></i>
+                            <i className="fas fa-user-edit pe-2 text-info"></i>
                             <input type="text" className=" input-style" id="name" placeholder="Enter your full name" />
 
                         </div>
 
                         <div className="mb-3">
-                            <i class="fas fa-mobile-alt pe-2 text-info"></i>
+                            <i className="fas fa-mobile-alt pe-2 text-info"></i>
                             <input type="number" className=" input-style" id="name" placeholder="+88-017******" />
                         </div>
 
                         <div className="mb-3">
-                            <i class="fas fa-baby pe-2 text-info"></i>
+                            <i className="fas fa-baby pe-2 text-info"></i>
                             <input type="number" className=" input-style" id="name" placeholder="Enter Your Age" />
                         </div>
 

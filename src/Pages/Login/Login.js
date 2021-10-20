@@ -10,6 +10,7 @@ const Login = () => {
     const { googleSignInHandler, emailPasswordLoginHangler, setUser } = useAuth();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
 
     const location = useLocation();
     const myHistory = useHistory();
@@ -55,7 +56,8 @@ const Login = () => {
             })
             .catch((error) => {
                 const errorMessage = error.message;
-                console.log(errorMessage);
+                setError(errorMessage);
+
             });
 
     }
@@ -79,7 +81,12 @@ const Login = () => {
                                 <i className="fas fa-key pe-2 text-danger"></i>
                                 <input onBlur={passwordChangeHandler} type="password" className=" input-style" id="exampleInputPassword1" placeholder="Enter your password" />
                             </div>
+                            <p className="text-danger fw-bolder">{error?.includes('wrong-password') ? "Wrong Password! please enter your correct password" : ""}</p>
+                            <p className="text-danger fw-bolder">{error?.includes('user-not-found') ? "Please go for register!" : ""}</p>
+
                             <input type="submit" value="Submit" className="btn btn-outline-danger" />
+
+
 
                             <p className="pt-3">New User? <Link to="/register">Please register here</Link></p>
 
@@ -89,6 +96,7 @@ const Login = () => {
                         <hr className="w-25" /><span></span>
                         <button className="btn btn-danger" onClick={handleGoogleLogin}> Login with Google</button>
                         <hr className="w-25" />
+
 
                     </div>
 

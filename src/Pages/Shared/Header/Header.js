@@ -23,7 +23,7 @@ const Header = () => {
                             <Nav.Link as={Link} to="/register">Register</Nav.Link>
                             {
                                 user.email &&
-                                <img src={user.photoURL} alt="" height='50' width='50' className="rounded-circle m-auto p-1" />
+                                <img src={user?.photoURL} alt="" height='50' width='50' className="rounded-circle m-auto p-1" />
                             }
                             <Nav.Link className="text-primary">{user?.displayName}</Nav.Link>
                             {

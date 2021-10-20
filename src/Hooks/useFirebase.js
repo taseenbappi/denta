@@ -46,7 +46,7 @@ const useFirebase = () => {
     const userNameUpdate = (name) => {
 
         updateProfile(auth.currentUser, {
-            displayName: name, photoURL: "https://example.com/jane-q-user/profile.jpg"
+            displayName: name
         }).then(() => {
             // Profile updated!
             // ...
