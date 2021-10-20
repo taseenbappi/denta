@@ -3,6 +3,7 @@
         "_id": 1,
         "title": "Cosmetic Dentistry",
         "description": "Cosmetic Dentistry improve the appearance of an individual’s teeth.",
+        "details": "Cosmetic dentistry is generally used to refer to any dental work that improves the appearance of teeth, gums and/or bite. It primarily focuses on improvement in dental aesthetics in color, position, shape, size, alignment and overall smile appearance.",
         "image": "https://i.ibb.co/mDWcL02/services-2.jpg",
         "cost": 150
     },
@@ -10,6 +11,7 @@
         "_id": 2,
         "title": "Dental Implants",
         "description": "Dental implants are the closest you can get to healthy,natural teeth.",
+        "details": "A dental implant is a surgical component that interfaces with the bone of the jaw or skull to support a dental prosthesis such as a crown, bridge, denture, or facial prosthesis or to act as an orthodontic anchor.",
         "image": "https://i.ibb.co/LhKDR7y/services-3.jpg",
         "cost": 120
     },
@@ -17,6 +19,7 @@
         "_id": 3,
         "title": "Crowns & Bridges",
         "description": "We’ll design,produce and insert ceramic structure all in one single appointment.",
+        "details": "A crown or cap is a dental restoration that covers the exposed surface of a tooth to strengthen it or improve its appearance. A bridge is a dental restoration to replace one or more missing teeth. It includes an artificial tooth or teeth which are fused to crowns on either side to provide support.",
         "image": "https://i.ibb.co/jD7k00d/services-4.jpg",
         "cost": 200
     },
@@ -24,13 +27,15 @@
         "_id": 4,
         "title": "Teeth Whitening",
         "description": "Teeth Whitening improve how your teeth look by removing stains and discoloration.",
+        "details": "Tooth whitening or tooth bleaching is the process of lightening the color of human teeth. Whitening is often desirable when teeth become yellowed over time for a number of reasons, and can be achieved by changing the intrinsic or extrinsic color of the tooth enamel.",
         "image": "https://i.ibb.co/Qk4rS8c/services-5.jpgg",
         "cost": 90
     },
     {
         "_id": 5,
-        "title": "Dental Radioghraphy",
+        "title": "Dental Radiography",
         "description": "Dental X-rays are a useful tool that help to diagnose and plan treatments.",
+        "details": "Dental radiographs are commonly called X-rays. Dentists use radiographs for many reasons: to find hidden dental structures, malignant or benign masses, bone loss, and cavities. ",
         "image": "https://i.ibb.co/pPm97sr/services-6.jpg",
         "cost": 60
     },
@@ -38,6 +43,7 @@
         "_id": 6,
         "title": "Cavity Protection",
         "description": "Will help strengthen teeth and leave your mouth feeling fresh.",
+        "details": "Sealants are a thin coating painted on the chewing surfaces of teeth -- usually the back teeth (the premolars and molars) -- to prevent tooth decay. The liquid sealant quickly bonds into the depressions and grooves of the teeth, forming a protective shield over the enamel of each tooth.",
         "image": "https://i.ibb.co/RhrxYnP/services-1.jpg",
         "cost": 100
     }

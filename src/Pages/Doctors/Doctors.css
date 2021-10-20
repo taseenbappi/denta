@@ -11,3 +11,8 @@
 .details-subtitle{
     color: #163f7a;
 }
+.doctor-card:hover{
+    box-shadow: 0px 5px 10px gray;
+    transition: box-shadow 0.5s;
+
+}

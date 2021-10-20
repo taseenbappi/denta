@@ -32,7 +32,7 @@ const useFirebase = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 // sign up
-                const user = userCredential.user;
+
                 userNameUpdate(name);
                 // ...
             })
@@ -46,7 +46,7 @@ const useFirebase = () => {
     const userNameUpdate = (name) => {
 
         updateProfile(auth.currentUser, {
-            displayName: name
+            displayName: name, photoURL: "https://example.com/jane-q-user/profile.jpg"
         }).then(() => {
             // Profile updated!
             // ...
