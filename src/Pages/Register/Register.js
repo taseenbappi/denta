@@ -36,7 +36,7 @@ const Register = () => {
 
         setPassword(passwordTxt);
     }
-
+    // email and password register handler
     const registrationHandler = (event) => {
         event.preventDefault();
         registerHangler(email, password, name);

@@ -3,9 +3,12 @@ import { Link } from 'react-router-dom';
 import './Service.css';
 
 const Service = (props) => {
+    // service data destructuring
     const { _id, title, description, image, cost } = props.serviceItem;
+    // dynamic uri
     const uri = `/detailsService/${_id}`;
     return (
+        // service card
         <div className="col p-3 ">
             <div className="card h-100 service-card ">
                 <img className="img-fluid service-img " src={image} alt="" />

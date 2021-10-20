@@ -4,6 +4,7 @@ import './Banner.css';
 
 const Banner = () => {
     return (
+        // this is banner segment
         <div className="banner d-flex align-items-center container-fluid">
             <div className="row ">
                 <div className="col-lg-8 col-md-8 col-sm-12 col-12  ">

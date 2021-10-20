@@ -7,6 +7,7 @@ import './Home.css';
 
 const Home = () => {
     return (
+        // home page container
         <div>
             <Banner></Banner>
             <GeneralContent></GeneralContent>

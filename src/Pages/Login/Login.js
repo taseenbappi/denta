@@ -16,8 +16,8 @@ const Login = () => {
     const myHistory = useHistory();
     const redirect_uri = location.state?.from || "/home";
 
+    // google sign in handler
     const handleGoogleLogin = () => {
-
         googleSignInHandler()
             .then((result) => {
                 // The signed-in user info.
@@ -32,19 +32,20 @@ const Login = () => {
 
             });
     }
-
+    // get email data from input field
     const emailChangeHandler = (event) => {
         const emailTxt = event.target.value;
         setEmail(emailTxt);
 
     }
+    // get password data from input field
     const passwordChangeHandler = (event) => {
         const passwordTxt = event.target.value;
         setPassword(passwordTxt);
     }
 
+    // user email and password handler
     const loginHandler = (event) => {
-
         event.preventDefault();
         emailPasswordLoginHangler(email, password)
             .then((userCredential) => {
@@ -63,6 +64,7 @@ const Login = () => {
     }
     return (
         <div>
+            {/* login segment */}
             <div className='py-3 container '>
 
                 <div className="row p-3 justify-content-center align-items-center">

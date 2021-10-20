@@ -1,6 +1,7 @@
 import React from 'react';
 
 const DeService = (props) => {
+    // services data destructuring
     const { title, description, details, image } = props.serv;
 
     return (
@@ -29,6 +30,7 @@ const DeService = (props) => {
                     </div>
 
                 </div>
+                {/* meet shedule */}
                 <div className="col-lg-6 col-md-6 col-sm-12 col-12 text-start p-5">
                     <div>
                         <img className='img-thumbnail' src={image} alt="" />

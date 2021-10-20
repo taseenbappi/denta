@@ -3,11 +3,13 @@ import './Appointment.css';
 
 
 const Appointment = () => {
+
     const handleAppoinment = (e) => {
         e.preventDefault();
     }
 
     return (
+        // Appointment section start here
         <div className="container-fluid p-0" >
             <div className="appointment-title d-flex align-items-center justify-content-center ">
                 <h1 className="text-white">Get Your Appointment Now!</h1>

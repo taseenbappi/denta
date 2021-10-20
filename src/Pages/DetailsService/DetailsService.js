@@ -5,9 +5,11 @@ import './DetailsService.css';
 
 const DetailsService = () => {
 
+    // get dynamic params id
     const { serviceId } = useParams();
     const [services, setServices] = useState([]);
 
+    // load services data
     useEffect(() => {
         fetch('/fakeData/services.json')
             .then(res => res.json())
@@ -19,6 +21,7 @@ const DetailsService = () => {
 
 
     return (
+        // services details information container
         <div className="container-fluid p-0" >
             {
                 newService.map(serv => <DeService

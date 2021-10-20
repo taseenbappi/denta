@@ -3,6 +3,7 @@ import './GeneralContent.css';
 
 const GeneralContent = () => {
     return (
+        // general inoformation segment
         <div className='container-fluid g-container'>
             <div className="row">
                 <div className="col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center align-items-center g-body">

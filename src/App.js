@@ -16,6 +16,7 @@ import PrivateRoute from './utilities/PrivateRoute/PrivateRoute';
 function App() {
   return (
     <div className="App">
+      {/* context provider */}
       <AuthProvider>
         <Router>
           <Header></Header>
@@ -26,9 +27,11 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
+            {/* privateroute */}
             <PrivateRoute path="/detailsService/:serviceId">
               <DetailsService></DetailsService>
             </PrivateRoute>
+            {/* privateroute */}
             <PrivateRoute path="/doctors">
               <Doctors></Doctors>
             </PrivateRoute>
@@ -41,6 +44,7 @@ function App() {
             <Route path="/about">
               <About></About>
             </Route>
+            {/* privateroute */}
             <PrivateRoute path="/appointment">
               <Appointment></Appointment>
             </PrivateRoute>

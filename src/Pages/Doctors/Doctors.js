@@ -7,6 +7,7 @@ import doctor3 from '../../images/doctors/doctor-4.jpg';
 const Doctors = () => {
 
     return (
+        // all doctors segment
         <div className="container-fluid p-0 bg-light" >
             <div className="details-title d-flex align-items-center justify-content-center ">
                 <h1 className="text-white">Our Doctors</h1>
